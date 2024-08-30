@@ -1,0 +1,49 @@
+{{ define "layouts/sidebar.html" }}
+<div class="vertical-menu z-0">
+
+    <div data-simplebar class="h-100">
+
+        <div id="sidebar-menu">
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title" data-key="t-menu">Menu</li>
+
+               
+                <li> <a href="apps-chat"> <i data-feather="message-square"></i> <span data-key="t-chat">Chart</span> </a> </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="mail"></i>
+                        <span data-key="t-email">Email</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="/apps-email-inbox" data-key="t-inbox">Inbox</a></li>
+                        <li><a href="/apps-email-read" data-key="t-read-email">Read</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="apps-calendar">
+                        <i data-feather="calendar"></i>
+                        <span data-key="t-calendar">@lang('translation.Calendars')</span>
+                    </a>
+                </li>
+
+                
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="map"></i>
+                        <span data-key="t-maps">@lang('translation.Maps')</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="/maps-google" data-key="t-g-maps">@lang('translation.Google')</a></li>
+                        <li><a href="/maps-vector" data-key="t-v-maps">@lang('translation.Vector')</a></li>
+                        <li><a href="/maps-leaflet" data-key="t-l-maps">@lang('translation.Leaflet')</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}

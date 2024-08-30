@@ -1,0 +1,36 @@
+{{ define "layouts/header.html" }}
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title> VerbaProvision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="VerbaProvision" name="description" />
+    <meta content="Kommlabs" name="author" />
+    <meta name="csrf-token" content="">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    
+    <link href="assets/libs/datatables/scroller.min.css?v=1.0" rel="stylesheet">
+
+
+    <link href="assets/libs/datatables/datatables.min.css?v=1.0" rel="stylesheet">
+
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css?v=1.0" rel="stylesheet">
+    <link href="assets/libs/choices.js/choices.js.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/preloader.min.css?v=1.0" type="text/css" />
+    <link href="assets/css/bootstrap.min.css?v=1.0" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css?v=1.0" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet">
+    <link href="assets/css/app.min.css?v=1.0" id="app-style" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/jquery-confirm.min.css?v=1.0">
+    <link href="assets/css/custome.css?v=1.0" rel="stylesheet">
+</head>
+
+<body>
+  <div id="layout-wrapper">
+    {{ template "layouts/topbar.html" . }}
+    {{ template "layouts/sidebar.html" . }}
+    <main id="main" class="main content-area">
+{{ end }}
